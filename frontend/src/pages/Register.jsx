@@ -18,7 +18,7 @@ const Register = ({ setToken }) => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("https://smart-meal-planner-rnwb5j5lb-pushkar-pandeys-projects-c94bb1c3.vercel.app/api/auth/register",  {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),

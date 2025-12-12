@@ -1,7 +1,7 @@
 // src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // Make sure CSS is imported
+import "./login.css"; // Make sure CSS is imported
 import bgImage from "../assets/login-bg.jpg"; // Your background image
 
 const Login = ({ setToken }) => {
@@ -15,11 +15,14 @@ const Login = ({ setToken }) => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+      const res = await fetch(
+        "https://smart-meal-planner-rnwb5j5lb-pushkar-pandeys-projects-c94bb1c3.vercel.app/api/auth/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       const data = await res.json();
 
