@@ -1,0 +1,190 @@
+/* Full page background image */
+.dashboard-page {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 40px;
+}
+
+/* Dark overlay */
+.dashboard-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.dashboard {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  width: 70%;
+  margin: 0 auto 25px auto;
+  padding: 45px 30px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  border-radius: 26px;
+  text-align: center;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+  animation: fadeInSmooth 1s ease-in-out;
+}
+
+.welcome-banner h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+/* QUOTE TEXT */
+.quote-text {
+  margin-top: 12px;
+  font-size: 22px; /* Bigger quote */
+  font-weight: 500;
+  color: #f8f8f8;
+  opacity: 0.9;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  animation: fadeInSmooth 1.6s ease-in-out; /* Smooth animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons Section */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Modern Buttons */
+.modern-btn {
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modern-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+}
+
+.yellow {
+  background: linear-gradient(45deg, #ffb300, #ffd84c);
+  color: #222;
+}
+
+/* ==============================
+   TODAY'S MEAL PLAN MAIN BOX
+============================== */
+.ud-mealplan-wrapper {
+  width: 98%;
+  margin: 40px auto 0 auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInSmooth 1s ease;
+}
+
+.ud-mealplan-wrapper h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* ==============================
+   THE THREE CARD GRID
+============================== */
+.ud-mealplan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 25px;
+}
+
+/* Single Card */
+.ud-meal-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ud-meal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.18);
+}
+
+.ud-meal-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 900px) {
+  .ud-mealplan-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Button OUTSIDE the box — same style as old one */
+.download-section-outside {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.download-section-outside button {
+  padding: 14px 26px;
+  background: #20c997;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.25s;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.download-section-outside button:hover {
+  background: #179f77;
+}

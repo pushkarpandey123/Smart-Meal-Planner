@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap");
+.image-text-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-text-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5%; /* spacing from edges */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-text-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  padding-right: 40px;
+}
+
+.text-content h2 {
+  font-family: "Playfair Display", serif; /* elegant serif for headings */
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.text-content p {
+  font-family: "Lato", sans-serif; /* clean sans-serif for text */
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.text-content .cta-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px; /* straight edges */
+}
+
+.image-text-block:nth-child(even) {
+  background-color: #f9e6da; /* slightly darker than even blocks */
+  padding: 80px 5%; /* maintain spacing */
+  margin-bottom: 20px; /* space between blocks */
+  border-radius: 12px; /* optional: slightly curved edges for the block */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* subtle shadow to separate visually */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .image-text-block {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .image-text-block.reverse {
+    flex-direction: column;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
