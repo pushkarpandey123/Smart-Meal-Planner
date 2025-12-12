@@ -1,7 +1,7 @@
 // src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // Make sure CSS is imported
+import "./login.css"; // Make sure CSS is imported
 import bgImage from "../assets/login-bg.jpg"; // Your background image
 
 const Login = ({ setToken }) => {
