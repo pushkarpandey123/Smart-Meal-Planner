@@ -80,17 +80,17 @@ If you find this project helpful or interesting, feel free to give it a ⭐ on G
 
 ## 🖼 Screenshots
 
-![Homepage](frontend/src/assets/MainHomePage.png)
-
-![Login Page](frontend/src/assets/Login.png)
-
-![Register Page](frontend/src/assets/Register.png)
-
 ![Meal](frontend/src/assets/Meal1.png)
 
 ![Meal](frontend/src/assets/Meal2.png)
 
 ![Meal](frontend/src/assets/Meal3.png)
+
+![Login Page](frontend/src/assets/Login.png)
+
+![Register Page](frontend/src/assets/Register.png)
+
+
 
 
 
