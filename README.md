@@ -80,7 +80,7 @@ If you find this project helpful or interesting, feel free to give it a ⭐ on G
 
 ## 🖼 Screenshots
 
-![Homepage](frontend/src/assets/HomePage.png)
+![Homepage](frontend/src/assets/MainHomePage.png)
 
 ![Login Page](frontend/src/assets/Login.png)
 
